@@ -12,7 +12,7 @@
             <button
                 @click="handleSend"
                 :disabled="loading || !inputText.trim()"
-                class="bg-simpsons-yellow border-2 border-black text-black font-black px-5 py-3 rounded-xl hover:bg-yellow-300 disabled:opacity-50 transition-colors shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-[3px] active:translate-y-[3px]">
+                class="bg-simpsons-yellow border-2 border-black text-black font-black px-5 py-3 rounded-xl hover:bg-yellow-300 disabled:opacity-50 transition-colors shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-0.75 active:translate-y-0.75">
                 {{ loading ? '...' : 'Enviar' }}
             </button>
         </div>

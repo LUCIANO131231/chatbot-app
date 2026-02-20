@@ -2,7 +2,7 @@
     <div :class="isUser ? 'item-end' : 'item-start'" class="flex flex-col gap-1">
         <div class="flex items-end gap-2" :class="isUser ? 'flex-row-reverse' : 'flex-row'">
             <!-- Avatar papeto -->
-            <div class="w-8 h-8 rounded-full border-2 border-black flex items-center justify-center text-sm flex-shrink-0"
+            <div class="w-8 h-8 rounded-full border-2 border-black flex items-center justify-center text-sm shrink-0"
                         :class="isUser ? 'bg-blue-500' : 'bg-simpsons-yellow'">
                 {{ isUser ? '👤' : '🍩' }}
             </div>

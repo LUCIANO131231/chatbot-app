@@ -3,14 +3,10 @@
         <!-- Fondo -->
         <div class="fixed inset-0 bg-linear-to-b from-sky-300 to-sky-100 dark:from-gray-800 dark:to-gray-900 -z-10"></div>
         <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-            <div class="cloud cloud-1">☁️</div>
-            <div class="cloud cloud-2">☁️</div>
-            <div class="cloud cloud-3">☁️</div>
-            <div class="cloud cloud-4">☁️</div>
-            <div class="cloud cloud-5">☁️</div>
+            <div v-for="n in 15" :key="n" :class="`cloud cloud-${n}`">☁️</div>
         </div>
         <!-- -->
-        <div class="w-full max-w-2xl bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col overflow-hidden" style="height: 85vh;">
+        <div class="w-full max-w-2xl bg-white/30 dark:bg-gray-900/80 backdrop-blur-sm rounded-2xl border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] flex flex-col overflow-hidden" style="height: 85vh;">
             <ChatHeader />
             <div ref="messagesContainer" class="flex-1 overflow-y-auto p-4 flex flex-col gap-4 relative transition-colors">
                 <div v-if="messages.length === 0" class="relative z-10 flex flex-col items-center justify-center h-full text-center gap-3">
